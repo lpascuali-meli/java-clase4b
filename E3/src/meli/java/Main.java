@@ -28,15 +28,25 @@ public class Main {
         FuegoArtificialIndividual fuego4 = new FuegoArtificialIndividual();
         FuegoArtificialIndividual fuego5 = new FuegoArtificialIndividual();
         FuegoArtificialIndividual fuego6 = new FuegoArtificialIndividual();
+        FuegoArtificialIndividual fuego7 = new FuegoArtificialIndividual();
+        FuegoArtificialIndividual fuego8 = new FuegoArtificialIndividual();
+        FuegoArtificialIndividual fuego9 = new FuegoArtificialIndividual();
         // Agregamos 3 individuales
         evento.agregarFuego(fuego1);
         evento.agregarFuego(fuego2);
         evento.agregarFuego(fuego3);
-        // Y los otros tres en un pack
+        // Tres en un pack
         FuegoArtificialPack pack1 = new FuegoArtificialPack();
         pack1.agregarFuego(fuego4);
         pack1.agregarFuego(fuego5);
         pack1.agregarFuego(fuego6);
+        // Y los otros tres en otro pack
+        FuegoArtificialPack pack2 = new FuegoArtificialPack();
+        pack2.agregarFuego(fuego7);
+        pack2.agregarFuego(fuego8);
+        pack2.agregarFuego(fuego9);
+        pack1.agregarFuego(pack2);
+
         evento.agregarFuego(pack1);
 
         //Soplamos las velas
